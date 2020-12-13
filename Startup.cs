@@ -30,6 +30,7 @@ namespace PostmanCollectionGeneratorOnExceptions
                 app.UseDeveloperExceptionPage();
             }
 
+            // ensure registration before any middleware that reads request body without enable buffering.
             app.UseMiddleware<ExceptionHandlerMiddleware>();
             app.UseHttpsRedirection();
 
