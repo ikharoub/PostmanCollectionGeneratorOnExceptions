@@ -11,7 +11,7 @@ namespace PostmanCollectionGeneratorOnExceptions.Middleware.PostmanHelper
         public string CollectionName { get; set; }
         public Collection()
         {
-            CollectionName = $"Failures/{DateTime.Now:dd-MM-yyyy}.json";
+            CollectionName = $"{DateTime.Now:dd-MM-yyyy}.json";
             Info = new Info
             {
                 Name = $"{DateTime.Now:dd-MM-yyyy}",
